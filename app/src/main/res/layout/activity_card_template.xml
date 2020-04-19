@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--dp = px / (dpi/160) = 2.625-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/SetView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="@color/colorBackground"
+        android:background="@drawable/animal_crossing"
+        android:clickable="true"
+        app:cardCornerRadius="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/opacity_grey">
+        </TextView>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/SetTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitobold"
+                android:text="Animals"
+                android:textColor="@android:color/white"
+                android:textSize="36sp">
+            </TextView>
+            <TextView
+                android:id="@+id/Introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitobold"
+                android:text="@string/sample_text"
+                android:textColor="@android:color/white"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+                android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+                <Button
+                    android:layout_width="115dp"
+                    android:layout_height="40dp"
+                    android:text="Review"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/nunitobold"
+                    android:background="@drawable/main_gradient_sharp">
+                </Button>
+                <Button
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="115dp"
+                    android:layout_height="40dp"
+                    android:text="practice"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/stroke_white_transparent_sharp">
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

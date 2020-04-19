@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:text="Cardie"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunitoblack"
+        android:textColor="@color/colorGradientEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Avatar"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/Title"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@id/Avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/learn_btn"
+            android:textSize="50sp"
+            android:text="Learn"
+            android:background="@drawable/main_gradient"
+            android:textColor="@android:color/white"
+            android:layout_width="300dp"
+            android:layout_height="100dp">
+
+        </Button>
+        <Button
+            android:id="@+id/stats_btn"
+            android:layout_marginTop="20dp"
+            android:textSize="50sp"
+            android:text="Stats"
+            android:background="@drawable/stroke_white_transparent"
+            android:textColor="@android:color/white"
+            android:layout_width="300dp"
+            android:layout_height="100dp">
+
+        </Button>
+        <Button
+            android:id="@+id/settings_btn"
+            android:layout_marginTop="20dp"
+            android:textSize="50sp"
+            android:text="Settings"
+            android:background="@drawable/stroke_white_transparent"
+            android:textColor="@android:color/white"
+            android:layout_width="300dp"
+            android:layout_height="100dp">
+
+        </Button>
+
+    </LinearLayout>
+</RelativeLayout>
